@@ -131,6 +131,6 @@ This runs both the client (port 5000) and server (port 3001) concurrently.
 ## Environment Variables Example
 
 ```
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/social_lite?retryWrites=true&w=majority
-JWT_SECRET=your-super-secret-random-string-here
+MONGODB_URI=mongodb+srv://aminulsordar69:12345@fb.aviaygg.mongodb.net/?appName=fb
+JWT_SECRET=01849895103@abir
 ```
