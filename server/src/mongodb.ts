@@ -1,6 +1,6 @@
 import { MongoClient, Db, ObjectId } from 'mongodb';
 
-const MONGODB_URI = process.env.MONGODB_URI || '';
+const MONGODB_URI ='mongodb+srv://aminulsordar69:12345@fb.aviaygg.mongodb.net/?appName=fb';
 
 let client: MongoClient;
 let db: Db;
