@@ -7,8 +7,8 @@ import jwt from 'jsonwebtoken';
 
 const app = express();
 
-const MONGODB_URI = process.env.MONGODB_URI || '';
-const JWT_SECRET = process.env.JWT_SECRET || 'fallback-secret-key';
+const MONGODB_URI ='mongodb+srv://aminulsordar69:12345@fb.aviaygg.mongodb.net/?appName=fb';
+const JWT_SECRET = '12345678@';
 const REACTION_TYPES = ['like', 'love', 'care', 'haha', 'wow', 'sad', 'angry'];
 
 let db: Db;
