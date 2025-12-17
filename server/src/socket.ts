@@ -2,7 +2,7 @@ import { Server, Socket } from 'socket.io';
 import jwt from 'jsonwebtoken';
 import { getDb, ObjectId } from './mongodb.js';
 
-const JWT_SECRET = process.env.JWT_SECRET || process.env.REPL_ID || 'fallback-secret-key';
+const JWT_SECRET ='12345678@';
 const onlineUsers = new Map<string, string>();
 
 async function isConversationParticipant(userId: string, conversationId: string): Promise<boolean> {
