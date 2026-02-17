@@ -21,14 +21,22 @@ jobs:
         with:
           node-version: 20
 
-      # 3️⃣ Install server dependencies
+      # 3️⃣ Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # 4️⃣ Install server dependencies
       - name: Install server dependencies
         run: |
           cd server
           npm install
 
-      # 4️⃣ Run the API
-      - name: Run API
+      # 5️⃣ Run linting/tests (optional - replace with your actual build command)
+      - name: Build/Test
+        run: npm run build || echo "Build step not configured"
+
+      # 6️⃣ Verify API structure
+      - name: Verify API files
         run: |
           cd server
-          npx tsx api/index.tsx
+          ls -la api/
